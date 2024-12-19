@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* //This will show the hidden items which are having active class name and hr tag  */
+.active hr{
+  /* @apply block is to block hidden  */
+  @apply block 
+}
+
+::-webkit-scrollbar{
+  @apply hidden
+}
