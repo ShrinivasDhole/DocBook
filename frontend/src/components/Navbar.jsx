@@ -10,7 +10,9 @@ const Navbar = () => {
 
     
     <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-grey-400'>
-        <img src={assets.image} alt="" className='h-10 w-70 cursor-pointer' />
+        <img onClick={()=>{
+            navigate('/')
+        }} src={assets.image} alt="" className='h-10 w-70 cursor-pointer' />
         <ul className='hidden md:flex items-center justify-between font-medium gap-4'>
             <NavLink to='/'>
                 <li className="py-1">
